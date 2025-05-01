@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">train_annoucement</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">Train generator</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="generate">Generate</string>
+    <string name="expansion">Expansion:</string>
+    <string name="city">City:</string>
+    <string name="aetheryte">Aetheryte</string>
+    <string name="start_time">Start time in (min):</string>
+    <string name="nb_marks">Number of marks</string>
+    <string-array name="expansions_list">
+        <item>Stormblood</item>
+        <item>Shadowbringer</item>
+        <item>Endwalker</item>
+        <item>Dawntrail</item>
+    </string-array>
+
+    <string-array name="stormblood_list">
+        <item>The Fringes</item>
+        <item>The Peaks</item>
+        <item>The Ruby Sea</item>
+        <item>Yanxia</item>
+        <item>The Azim Steppe</item>
+        <item>The Locks</item>
+    </string-array>
+    <string-array name="fringe_list">
+        <item>Castrum Oriens</item>
+        <item>The Peering Stones</item>
+    </string-array>
+    <string-array name="peaks_list">
+        <item>Ala Ghiri</item>
+        <item>Ala Gannha</item>
+    </string-array>
+    <string-array name="ruby_list">
+        <item>Onokoro</item>
+        <item>Tamamizu</item>
+    </string-array>
+    <string-array name="yanxia_list">
+        <item>House of the first</item>
+    </string-array>
+    <string-array name="azimme_list">
+        <item>Dhoro Iloh</item>
+        <item>The Dawn Throne</item>
+        <item>Reunion</item>
+    </string-array>
+    <string-array name="loch_list">
+        <item>Porta Praetoria</item>
+        <item>The Ala Mhigan Quarter</item>
+    </string-array>
+
+    <string-array name="shadowbringer_list">
+        <item>Lakeland</item>
+        <item>Kholusia</item>
+        <item>Ahm Araeng</item>
+        <item>Il Mheg</item>
+        <item>Ratika</item>
+        <item>Temptest</item>
+    </string-array>
+    <string-array name="lakeland_list">
+        <item>Fort Jobb</item>
+        <item>The Ostall Imperative</item>
+    </string-array>
+    <string-array name="kholusia_list">
+        <item>Stilltide</item>
+        <item>Wright</item>
+        <item>Tomra</item>
+    </string-array>
+    <string-array name="ahm_list">
+        <item>The Inn at Journey Head</item>
+        <item>Mord Souq</item>
+        <item>Twine</item>
+    </string-array>
+    <string-array name="ilmegh_list">
+        <item>Lydha Lran</item>
+        <item>Pla Enni</item>
+        <item>Wolekdorf</item>
+    </string-array>
+    <string-array name="ratika_list">
+        <item>Slitherbough</item>
+        <item>Fanow</item>
+    </string-array>
+    <string-array name="tempest_list">
+        <item>The Ondo Cups</item>
+    </string-array>
+
+    <string-array name="endwalker_list">
+        <item>Labyrinthos</item>
+        <item>Thavnair</item>
+        <item>Garlemald</item>
+        <item>Mare Lamentorum</item>
+        <item>Elpis</item>
+        <item>Ultima Thule</item>
+    </string-array>
+    <string-array name="laby_list">
+        <item>The Archeion</item>
+        <item>Sharlayan Hamlet</item>
+        <item>Aporia</item>
+    </string-array>
+    <string-array name="thav_list">
+        <item>Palaka Stand</item>
+        <item>Yedlihmad Hamlet</item>
+        <item>The Great Work</item>
+    </string-array>
+    <string-array name="garlemald_list">
+        <item>Camp Broken Glass</item>
+        <item>Tertium</item>
+    </string-array>
+    <string-array name="mare_list">
+        <item>Sinus Lacrimarum</item>
+        <item>Bestways Burrow</item>
+    </string-array>
+    <string-array name="elpis_list">
+        <item>The Twelve Wonders</item>
+        <item>Anagnorisis</item>
+        <item>Poieten Oikos</item>
+    </string-array>
+    <string-array name="ultima_list">
+        <item>Reah Tahra</item>
+        <item>Abode of the Ea</item>
+    </string-array>
+
+    <string-array name="dawntrail_list">
+        <item>Urqopacha</item>
+        <item>Kozamauka</item>
+        <item>Yak tel</item>
+        <item>Shaaloani</item>
+        <item>Heritage found</item>
+        <item>Living memory</item>
+    </string-array>
+    <string-array name="urq_list">
+        <item>Wachunpelo</item>
+        <item>Worlar Echo</item>
+    </string-array>
+    <string-array name="koza_list">
+        <item>Ok hanu</item>
+        <item>Earthenshire</item>
+        <item>Dock Poga</item>
+        <item>Many Fires</item>
+    </string-array>
+    <string-array name="yak_list">
+        <item>Iq Braax</item>
+        <item>Mamook</item>
+    </string-array>
+    <string-array name="shaaloani_list">
+        <item>Hhusatahwi</item>
+        <item>Sheshenewezi Springs</item>
+        <item>Mehwahhetsoan</item>
+    </string-array>
+    <string-array name="heritage_list">
+        <item>Yyasulani Station</item>
+        <item>Electrope Strike</item>
+        <item>The Outskirts</item>
+    </string-array>
+    <string-array name="living_meomry_list">
+        <item>Leynode Mnemo</item>
+        <item>Leynode Aero</item>
+    </string-array>
+</resources>
