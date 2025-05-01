@@ -44,6 +44,7 @@ class FirstFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val worldSprinner: Spinner = view.findViewById(R.id.world_spinner)
         val expansionSpinner: Spinner = view.findViewById(R.id.expansion_spinner)
         val citySpinner: Spinner = view.findViewById(R.id.city_spinner)
         val aetheryteSpinner: Spinner = view.findViewById(R.id.aetheryte_spinner)
@@ -51,6 +52,14 @@ class FirstFragment : Fragment() {
         val startTimeInput: EditText = view.findViewById(R.id.start_time)
         val nbMarks: EditText  = view.findViewById(R.id.nb_marks)
         val generateButton: Button = view.findViewById(R.id.button_generate)
+
+        val worldAdapter = ArrayAdapter.createFromResource(
+            requireContext(),
+            R.array.world_list,
+            android.R.layout.simple_spinner_item
+        )
+        worldAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        worldSprinner.adapter = worldAdapter
         
         val expansionAdapter = ArrayAdapter.createFromResource(
             requireContext(),
@@ -124,6 +133,7 @@ class FirstFragment : Fragment() {
             val epochInSecond = future.epochSecond
 
             val timestamp = "<t:$epochInSecond:R>"
+            val world = worldSprinner.selectedItem as String
             val expansion = expansionSpinner.selectedItem as String
             val nbMarks = nbMarks.text.toString().toInt()
             val city = citySpinner.selectedItem as String
@@ -134,16 +144,16 @@ class FirstFragment : Fragment() {
             when(expansionSpinner.selectedItemPosition) {
                 0 -> ping = "<@&1091904124301353110>"
                 1 -> ping = "<@&934264458069561354>"
-                2 -> ping = "<@&934264593470070784>"
-                3 -> {
-                    ping = "<@&1255412015757918240>"
+                2 -> {
+                    ping = "<@&934264593470070784>"
                     nbMaxMarks = 14
                 }
+                3 -> ping = "<@&1255412015757918240>"
             }
 
             // Create the string with string interpolation
             val trainDetails = """
-            $ping Phantom $expansion train $nbMarks/$nbMaxMarks.
+            $ping $world $expansion train $nbMarks/$nbMaxMarks.
             Speed: Bullet
             Start time: $timestamp
             Type `/sea first rosenbloom en` in **game chat** to find current train zone
@@ -160,9 +170,6 @@ class FirstFragment : Fragment() {
 
             // Optionally, you can show a Toast to inform the user that the text has been copied
             Toast.makeText(context, "Train announcement  copied to clipboard!", Toast.LENGTH_SHORT).show()
-
-
-
         }
     }
 

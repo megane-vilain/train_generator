@@ -7,11 +7,24 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
     <string name="generate">Generate</string>
+    <string name="world">World:</string>
     <string name="expansion">Expansion:</string>
     <string name="city">City:</string>
     <string name="aetheryte">Aetheryte</string>
     <string name="start_time">Start time in (min):</string>
     <string name="nb_marks">Number of marks</string>
+
+    <string-array name="world_list">
+        <item>"Phantom"</item>
+        <item>"Cerberus"</item>
+        <item>"Louisoix"</item>
+        <item>"Moogle"</item>
+        <item>"Omega"</item>
+        <item>"Ragnarok"</item>
+        <item>"Sagittarius"</item>
+        <item>"Spriggan"</item>
+    </string-array>
+
     <string-array name="expansions_list">
         <item>Stormblood</item>
         <item>Shadowbringer</item>

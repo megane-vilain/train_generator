@@ -33,6 +33,25 @@
                     android:text="@string/expansion" />
 
                 <Spinner
+                    android:id="@+id/world_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/expansion" />
+
+                <Spinner
                     android:id="@+id/expansion_spinner"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content" />
