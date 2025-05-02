@@ -141,8 +141,12 @@ class FirstFragment : Fragment() {
 
             var ping = ""
             var nbMaxMarks = 12
+            var speed = "Bullet"
             when(expansionSpinner.selectedItemPosition) {
-                0 -> ping = "<@&1091904124301353110>"
+                0 -> {
+                    ping = "<@&1091904124301353110>"
+                    speed = "Semi-Chill Let me pull the targets"
+                }
                 1 -> ping = "<@&934264458069561354>"
                 2 -> {
                     ping = "<@&934264593470070784>"
@@ -154,7 +158,7 @@ class FirstFragment : Fragment() {
             // Create the string with string interpolation
             val trainDetails = """
             $ping $world $expansion train $nbMarks/$nbMaxMarks.
-            Speed: Bullet
+            Speed: $speed
             Start time: $timestamp
             Type `/sea first rosenbloom en` in **game chat** to find current train zone
             Start: $city - $aetheryte
