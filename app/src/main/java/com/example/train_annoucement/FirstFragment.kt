@@ -13,7 +13,6 @@ import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Spinner
-import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.fragment.app.Fragment
 import com.example.train_annoucement.databinding.FragmentFirstBinding
@@ -93,12 +92,14 @@ class FirstFragment : Fragment() {
                 id: Long
             ) {
                 val selected = parent.getItemAtPosition(position).toString()
-                Toast.makeText(requireContext(), "Selected: $selected", Toast.LENGTH_SHORT).show()
-
+                nbMarks.setText("12")
                 when (position) {
                     0 -> updateSpinner(citySpinner, R.array.stormblood_list)
                     1 -> updateSpinner(citySpinner, R.array.shadowbringer_list)
-                    2 -> updateSpinner(citySpinner, R.array.endwalker_list)
+                    2 -> {
+                        updateSpinner(citySpinner, R.array.endwalker_list)
+                        nbMarks.setText("16")
+                    }
                     3 -> updateSpinner(citySpinner, R.array.dawntrail_list)
                 }
             }
@@ -150,7 +151,7 @@ class FirstFragment : Fragment() {
                 1 -> ping = "<@&934264458069561354>"
                 2 -> {
                     ping = "<@&934264593470070784>"
-                    nbMaxMarks = 14
+                    nbMaxMarks = 16
                 }
                 3 -> ping = "<@&1255412015757918240>"
             }
@@ -171,9 +172,6 @@ class FirstFragment : Fragment() {
 
             // Set the text to the clipboard
             clipboard.setPrimaryClip(clip)
-
-            // Optionally, you can show a Toast to inform the user that the text has been copied
-            Toast.makeText(context, "Train announcement  copied to clipboard!", Toast.LENGTH_SHORT).show()
         }
     }
 
