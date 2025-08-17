@@ -2,7 +2,7 @@
     <string name="app_name">Train FFXIV</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">Train generator</string>
+    <string name="first_fragment_label">FFXIV Train</string>
     <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
@@ -13,6 +13,11 @@
     <string name="aetheryte">Aetheryte</string>
     <string name="start_time">Start time in (min):</string>
     <string name="nb_marks">Number of marks</string>
+    <string name="train_generator_title">FFXIV Train</string>
+    <string name="location_section">Location Settings</string>
+    <string name="train_config_section">Train Configuration</string>
+    <string name="generated_message">Announcement</string>
+    <string name="copy">Copy</string>
 
     <string-array name="world_list">
         <item>"Phantom"</item>

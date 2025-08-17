@@ -48,8 +48,8 @@ class FirstFragment : Fragment() {
         val citySpinner: Spinner = view.findViewById(R.id.city_spinner)
         val aetheryteSpinner: Spinner = view.findViewById(R.id.aetheryte_spinner)
 
-        val startTimeInput: EditText = view.findViewById(R.id.start_time)
-        val nbMarks: EditText  = view.findViewById(R.id.nb_marks)
+        val startTimeInput: EditText = view.findViewById(R.id.start_time_input)
+        val nbMarks: EditText  = view.findViewById(R.id.nb_marks_input)
         val generateButton: Button = view.findViewById(R.id.button_generate)
 
         val worldAdapter = ArrayAdapter.createFromResource(
